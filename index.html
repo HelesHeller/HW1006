@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="movies.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <h1>Search for Movies</h1>
+    <form id="searchForm">
+        <label for="movieTitle"></label><input type="text" id="movieTitle" placeholder="Enter movie title" required>
+        <label for="movieType"></label><select id="movieType">
+            <option value="movie">Movie</option>
+            <option value="series">Series</option>
+            <option value="episode">Episode</option>
+        </select>
+        <button type="submit">Search</button>
+    </form>
+    <div id="results"></div>
+    <div id="pagination"></div>
+</div>
+</body>
+</html>
